@@ -1,17 +1,18 @@
-#include <iostream>
 #include <string.h>
+
+#include <iostream>
 
 class Encapsulation {
    private:
-   std::string name;
-   int age;
+    std::string name;
+    int age;
 
-    public:
+   public:
     Encapsulation() {
         this->name = "";
         this->age = 0;
     }
-    
+
     void setName(std::string name) {
         this->name = name;
     }
@@ -30,16 +31,16 @@ class Encapsulation {
     void print() {
         std::cout << "Name: " << name << " Age: " << age << std::endl;
     }
-   
 };
 
 int main() {
     std::cout << "App Started" << std::endl;
-    Encapsulation app;
-    app.print();
-    app.setName("John");
-    app.setAge(30);
-    app.print();
+    // Encapsulation app;
+    // app.print();
+    // app.setName("John");
+    // app.setAge(30);
+    // app.print();
+    // app.age = 5;
     std::cout << "App Ended" << std::endl;
     return 0;
 }

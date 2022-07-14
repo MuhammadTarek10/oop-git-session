@@ -2,34 +2,32 @@
 
 class Polymorphism {
    public:
-   // virtual function
+    // virtual function
     virtual void method1() {
         std::cout << "Polymorphism: method1()" << std::endl;
     }
 
-    virtual void method2(){
+    virtual void method2() {
         std::cout << "Polymorphism: method2()" << std::endl;
     }
 
-    virtual void method2(int a){
+    virtual void method2(int a) {
         std::cout << "Polymorphism: method2(int a)" << std::endl;
     }
-
-    
 };
 
 class App : public Polymorphism {
    public:
     void method1() {
         std::cout << "App: method1()" << std::endl;
-    }    
+    }
 };
 
 class App2 : public Polymorphism {
    public:
     void method1() {
         std::cout << "App2: method1()" << std::endl;
-    }    
+    }
 };
 
 int main() {

@@ -3,7 +3,7 @@
 // It's also an example of polymorphism
 class Abstraction {
    public:
-   // virtual function
+    // virtual function
     virtual void method1() {
         std::cout << "Abstract Method" << std::endl;
     }
@@ -30,7 +30,7 @@ class Implementation2 : public Abstraction {
 // It's also an example of polymorphism
 class Interface {
    public:
-   // pure virtual function
+    // pure virtual function
     virtual void method1() = 0;
     // pure virtual function
     virtual void method2() = 0;
