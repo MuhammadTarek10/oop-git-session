@@ -3,6 +3,6 @@
 
 int main() {
     Car car("BMW", 100, 123);
-    car.Dashboard();
+    car.dashboard();
     return 0;
 }

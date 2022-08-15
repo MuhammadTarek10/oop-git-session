@@ -12,16 +12,15 @@ class Car {
 
    public:
     Car(const std::string manu, float fuel, int reg);
-    void SwitchOn();
-    void SwitchOff();
-    void Accelerate();
-    void Brake();
-    void Dashboard();
-    void FillFuel(float amount);
-    float GetFuel();
-    float GetSpeed();
+    void switchOn();
+    void switchOff();
+    void accelerate();
+    void brake();
+    void dashboard();
+    void fillFuel(float amount);
+    float getFuel();
+    float getSpeed();
 };
-
 
 // // Include CPP in Header
 // #ifndef _CAR_CPP_INCLUDED_

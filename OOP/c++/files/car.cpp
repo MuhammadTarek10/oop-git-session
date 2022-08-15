@@ -9,38 +9,38 @@ Car::Car(const std::string manu, float fuel, int reg) {
     isRunning = false;
 }
 
-void Car::SwitchOn() {
+void Car::switchOn() {
     isRunning = true;
 }
 
-void Car::SwitchOff() {
+void Car::switchOff() {
     isRunning = false;
 }
 
-void Car::Accelerate() {
+void Car::accelerate() {
     if (!isRunning)
         return;
     ++speed;
     fuel -= 1.5f;
 }
 
-void Car::Brake() {
+void Car::brake() {
     speed = 0;
 }
 
-void Car::Dashboard() {
+void Car::dashboard() {
     std::cout << "Speed: " << speed << std::endl;
     std::cout << "Fuel: " << fuel << std::endl;
 }
 
-void Car::FillFuel(float amount) {
+void Car::fillFuel(float amount) {
     fuel += amount;
 }
 
-float Car::GetFuel() {
+float Car::getFuel() {
     return fuel;
 }
 
-float Car::GetSpeed() {
+float Car::getSpeed() {
     return speed;
 }

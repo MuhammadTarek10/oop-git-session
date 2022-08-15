@@ -9,6 +9,7 @@ class Person {
     std::string name;
     int age;
 
+    // public functions
    public:
     // Constructor
     Person() {
