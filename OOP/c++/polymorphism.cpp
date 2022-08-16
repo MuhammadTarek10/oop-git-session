@@ -34,19 +34,20 @@ int main() {
     std::cout << "App Started" << std::endl;
     // int choice = 0;
     // Polymorphism *app;
-    // while(true){
+    // while (true) {
     //     std::cin >> choice;
     //     if (choice == 1)
     //         app = new App();
-    //     else if(choice == 2)
+    //     else if (choice == 2)
     //         app = new App2();
-    //     else{
-    //         delete(app);
+    //     else {
+    //         std::cout << "Invalid Choice" << std::endl;
     //         break;
     //     }
     //     app->method1();
     //     app->method2();
     //     app->method2(10);
+    //     delete app;
     // }
     std::cout << "App Ended" << std::endl;
     return 0;
