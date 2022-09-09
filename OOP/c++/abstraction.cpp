@@ -16,6 +16,7 @@ class Implementation : public Abstraction {
     virtual void method1() {
         std::cout << "Implementation1 Method1" << std::endl;
     }
+    
     virtual void method2() {
         std::cout << "Implementation1 Method1" << std::endl;
     }

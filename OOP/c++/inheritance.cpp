@@ -26,10 +26,10 @@ class App : public Inheritance {  // can be named child
 
 int main() {
     std::cout << "App Started" << std::endl;
-    // App app;
-    // app.method1();
-    // std::cout << "Age: " << app.age << std::endl;
-    // app.method2();
+    App app;
+    app.method1();
+    std::cout << "Age: " << app.age << std::endl;
+    app.method2();
     std::cout << "App Ended" << std::endl;
     return 0;
 }

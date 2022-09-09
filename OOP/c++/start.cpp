@@ -1,4 +1,3 @@
-#include <string.h>
 
 #include <iostream>
 
@@ -29,5 +28,7 @@ class Person {
 
 int main() {
     std::cout << "Hello World!" << std::endl;
+    Person x = Person();
+    x.doSomething();
     return 0;
 }
