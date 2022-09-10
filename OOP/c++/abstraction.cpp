@@ -49,15 +49,15 @@ class InterfaceImplementation : public Interface {
 
 int main() {
     std::cout << "App Started" << std::endl;
-    // Abstraction *app1 = new Implementation();
-    // app1->method1();
-    // app1->method2();
-    // Abstraction *app2 = new Implementation2();
-    // app2->method1();
-    // app2->method2();
-    // Interface *app3Interface = new InterfaceImplementation();
-    // app3Interface->method1();
-    // app3Interface->method2();
+    Abstraction *app1 = new Implementation();
+    app1->method1();
+    app1->method2();
+    Abstraction *app2 = new Implementation2();
+    app2->method1();
+    app2->method2();
+    Interface *app3Interface = new InterfaceImplementation();
+    app3Interface->method1();
+    app3Interface->method2();
     std::cout << "App Ended" << std::endl;
     return 0;
 }

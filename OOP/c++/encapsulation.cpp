@@ -35,12 +35,12 @@ class Encapsulation {
 
 int main() {
     std::cout << "App Started" << std::endl;
-    // Encapsulation app;
-    // app.print();
-    // app.setName("John");
-    // app.setAge(30);
-    // app.print();
-    // app.age = 5;
+    Encapsulation app;
+    app.print();
+    app.setName("John");
+    app.setAge(30);
+    app.print();
+    // app.age = 5; // // error because age is private
     std::cout << "App Ended" << std::endl;
     return 0;
 }
