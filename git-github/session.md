@@ -1,0 +1,266 @@
+# Git
+
+It's a version control system that lets you manage and keep track of your source code history.
+
+## Concepts
+
+### Working Directory
+
+Your local folder where you are working on your project.
+
+### Index (Staging Area)
+
+A place where you can group files and prepare them to be committed.
+
+### Repository
+
+A place where Git stores all the versions of your project.
+
+### Commits
+
+A snapshot of your project at a given time.
+
+### Branches
+
+A way to work on different versions of a repository at one time.
+
+### Merges
+
+A way to put a branch's changes into another branch.
+
+### Rebase
+
+A way to move or combine a sequence of commits to a new base commit.
+
+### Stash
+
+A way to save changes that you don't want to commit immediately.
+
+### Tags
+
+A way to mark a specific point in Git history as being important.
+
+## Commands
+
+### Init
+
+Initialize a local Git repository.
+
+```bash
+git init
+```
+
+### Add
+
+Add file contents to the index.
+
+```bash
+git add <file>
+```
+
+### Commit
+
+Record changes to the repository.
+
+```bash
+git commit -m "<message>"
+```
+
+### Status
+
+Show the working tree status.
+
+```bash
+git status
+```
+
+### Log
+
+Show commit logs.
+
+```bash
+git log
+```
+
+### Diff
+
+Show changes between commits, commit and working tree, etc.
+
+```bash
+git diff
+```
+
+### Branch
+
+List, create, or delete branches.
+
+```bash
+git branch
+```
+
+### Checkout
+
+Switch branches or restore working tree files.
+
+```bash
+git checkout <branch>
+```
+
+### Merge
+
+Join two or more development histories together.
+
+```bash
+git merge <branch>
+```
+
+### Rebase
+
+Reapply commits on top of another base tip.
+
+```bash
+git rebase <branch>
+```
+
+### Stash
+
+Stash the changes in a dirty working directory away.
+
+```bash
+git stash
+git stash apply
+```
+
+### Tag
+
+Create, list, delete or verify a tag object signed with GPG.
+
+```bash
+git tag
+```
+
+# GitHub
+
+## Concepts
+
+### Remotes
+
+A remote repository is one hosted somewhere other than our local machine. We can add remotes with `git remote add`, and set up _tracking branches_ to track differences between our local and remote repositories.
+
+### Pull
+
+To get changes from a remote repository to a local one.
+
+### Push
+
+To get changes from a local repository to a remote one.
+
+### Fetch
+
+To get changes from a remote repository to a local one without merging them.
+
+### Clone
+
+To copy a remote repository to a local one.
+
+### Fork
+
+To create a personal copy of someone else's project.
+
+### Pull Request
+
+To request that someone reviews and merges your changes to a project.
+
+### Merge Conflict
+
+When Git can't automatically resolve differences in a merge.
+
+### Gitignore
+
+A file that tells Git to ignore other files or directories.
+
+### License
+
+An open source license tells others what they can and can't do with your code.
+
+### README
+
+A file where you can tell others what your project does and how to use it.
+
+## Commands
+
+### Clone
+
+Create a local copy of a remote repository.
+
+```bash
+git clone <url>
+```
+
+### Remote
+
+Manage set of tracked repositories.
+
+```bash
+git remote add <name> <url>
+```
+
+### Fetch
+
+Download objects and refs from another repository.
+
+```bash
+git fetch
+```
+
+### Pull
+
+Fetch from and integrate with another repository or a local branch.
+
+```bash
+git pull
+```
+
+### Push
+
+Update remote refs along with associated objects.
+
+```bash
+git push
+```
+
+# Notes
+
+## Naming Conventions
+
+Team should agree on a way of naming everything, variables, functions, etc. (i.e. camelCase, snake_case, etc.) and stick to it.
+
+## Master Branch
+
+The master branch is the "default" branch when you create a repository. Use other branches for development and merge them back to the master branch upon completion.
+
+You don't change contents of master branch, all changes to it should be merged from a well tested branch. **(unless you know what you are doing)**
+
+## Branch Names
+
+Branch names should be descriptive, meaningful, have no spaces, and use dashes to separate words. (i.e. **new-branch** not new_branch or newbranch)
+
+## Merge Conflicts
+
+When Git can't automatically resolve differences in a merge, it creates a merge conflict. You can resolve merge conflicts by editing the files that Git couldn't merge. After you resolve the conflicts, you can add and commit the changes.
+
+## HEAD
+
+it's a pointer to the current branch reference, which is in turn a pointer to the last commit you made or the last commit that was checked out into your working directory.
+
+## Commit Messages
+
+You must write a descriptive commit message for every commit. Don't write a commit message like "fix" or "changes". Write a message that describes what you did in the commit. (i.e. "fix bug in login page" or "add new feature to dashboard")
+
+## .gitignore
+
+It's a file that tells Git to ignore other files or directories. You can use it to ignore files generated by your operating system, text editor, etc. You can also use it to ignore files in your repository that contain sensitive information like passwords or API keys.
+
+## requirements.txt
+
+It's a file that contains a list of all the Python packages that your project depends on. You can generate it by running `pip freeze > requirements.txt` in your project's directory.

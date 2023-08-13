@@ -2,3 +2,4 @@ venv/
 *vscode
 *check*
 *.exe
+*DS_Store
