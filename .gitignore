@@ -3,3 +3,5 @@ venv/
 *check*
 *.exe
 *DS_Store
+answer/
+.*
