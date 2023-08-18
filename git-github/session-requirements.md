@@ -14,4 +14,4 @@ By the end of this tutorial (or any other), you must have done the following:
 ## Notes
 
 - I encourage you to see the full tutorial though, it's very useful and the session will focus on practice more.
-- You're free to see whatever tutorials you like, all in all you must achieve the objectives <u>**Before Session**</u>.
+- You're free to see whatever tutorials you like, all in all you must achieve the objectives <ins>**Before Session**</ins>.
