@@ -1,15 +1,15 @@
-#ifndef _DOG_H_
-#define _DOG_H_
+#ifndef _DUCK_H_
+#define _DUCK_H_
 
 #include <iostream>
 
 #include "animal.h"
 
-class Dog : public Animal {
+class Duck : public Animal {
  public:
   void makeSound();
 };
 
-#include "dog.cpp"
+#include "duck.cpp"
 
 #endif
